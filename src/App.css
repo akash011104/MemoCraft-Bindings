@@ -1,0 +1,290 @@
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #e5e7eb;
+}
+
+/* ================= NAVBAR ================= */
+.dashboard-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #111;
+  color: #fff;
+}
+
+.dashboard-nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.dashboard-nav-links li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard-nav-links li:hover {
+  color: #38bdf8;
+}
+
+/* ================= HERO ================= */
+.dashboard-hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(to right, #38bdf8, #6366f1);
+  color: white;
+}
+
+.dashboard-hero h1 {
+  font-size: 40px;
+}
+
+.dashboard-hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* ================= TEMPLATE ================= */
+.template-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.template-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.template-card:hover {
+  transform: scale(1.05);
+}
+
+/* ================= CONTROLS ================= */
+.controls {
+  text-align: center;
+  padding: 15px;
+  background: white;
+}
+
+.controls input {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 8px 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= A4 SHEET ================= */
+.sheet {
+  width: 210mm;
+  min-height: 305mm;
+  margin: 15px auto;
+  background: white;
+  padding: 10mm;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+  page-break-after: always;
+}
+
+/* ================= MEMO BOX ================= */
+.memo {
+  border: 1px solid #000;
+  padding: 10px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= HEADER ================= */
+.header {
+  text-align: center;
+}
+
+.shop-name {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
+}
+
+.sub {
+  font-size: 13px;
+  color: #444;
+}
+
+/* ================= TITLE ================= */
+.memo-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+/* ================= ROW ================= */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* ================= TABLE ================= */
+.table-container {
+  flex: 1;
+}
+
+/* ================= TABLE CONTAINER ================= */
+.table-container {
+  flex: 1;
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ================= HEADER (th) ================= */
+th {
+ 
+  color: rgb(24, 4, 4);
+  font-weight: 600;
+  padding: 8px;
+  border: 1px solid #1954de;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ================= BODY (td) ================= */
+td {
+  border: 1px solid #acbdd2;
+  text-align: center;
+  height: 32px;
+  padding: 4px;
+  font-size: 13px;
+}
+
+/* alternate row color */
+
+
+/* hover effect (screen only) */
+tbody tr:hover {
+  background: #255aa0;
+  transition: 0.2s;
+}
+
+/* ================= TOTAL ROW ================= */
+.total-label {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.total-value {
+  font-weight: bold;
+  font-size: 15px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+th, td {
+  border: 1px solid #000;
+  text-align: center;
+  height: 26px;
+  font-size: 13px;
+}
+
+th {
+  background: #f3f4f6;
+}
+
+/* ================= TOTAL ================= */
+.total-label {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.total-value {
+  font-weight: bold;
+  color: #dc2626;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign {
+  border-top: 2px solid black;
+  width: 120px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.note {
+  font-size: 12px;
+  text-align: right;
+  color: #444;
+}
+
+/* ================= PRINT FIX (MOST IMPORTANT) ================= */
+@media print {
+
+  body {
+    background: white;
+  }
+
+  .controls,
+  .dashboard-navbar,
+  .dashboard-hero,
+  .template-container {
+    display: none !important;
+  }
+
+  .sheet {
+    margin: 0;
+    box-shadow: none;
+    page-break-after: always;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
